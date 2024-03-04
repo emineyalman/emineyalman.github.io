@@ -1,0 +1,28 @@
+{
+  "years": [
+    {
+      "color": "cyan",
+      "year": "2014 - 2018",
+      "title": "Economy",
+      "description": "I graduated from the Department of Economics and am knowledgeable in the field of economics. I have the ability to solve economic problems with analytical thinking ability."
+    },
+    {
+      "color": "green",
+      "year": "2019 - 2021",
+      "title": "Computer Programmer",
+      "description": "I am a computer programmer, a versatile software developer. I have experience in different languages ​​and am skilled at solving complex problems."
+    },
+    {
+      "color": "pink",
+      "year": "2022",
+      "title": "İnnova Software",
+      "description": "I was creating the E-Commerce Site and the designs used on the Site using the Jet Technology Infrastructure (Administration Panel)."
+    },
+    {
+      "color": "amber",
+      "year": "2023",
+      "title": "Nist Group",
+      "description": "Template sites using Html, Css, Scss, Responsive Design, Flexbox, Bootstrap, JS technologies at workI did.I developed a buy and sell bot frontend using Vuejs, Nuxt js, Vuetify."
+    }
+  ]
+}
