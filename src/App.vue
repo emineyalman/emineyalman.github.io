@@ -1,12 +1,17 @@
 <template>
   <div class="app-container">
-    <div class="this">
+    <div class="all-container">
       <HomePage />
       <About />
       <Experience />
       <!-- <Skills /> -->
       <DenemeMe />
-      <!-- <DenemeMeOrnek /> -->
+      <DenemeMeOrnek />
+      <ContactPage/>
+      <NightLight/>
+    <!-- <ScrollDeneme/> -->
+      <!-- <ScrollDenemee/> -->
+      <CardPage/>
     </div>
   </div>
 </template>
@@ -21,6 +26,16 @@ import Experience from "./views/ExperiencePage.vue";
 import DenemeMe from "./views/DenemeMe.vue";
 // import DenemeMeOrnek from "./views/DenemeMe.vue";
 import About from "./views/AboutPage.vue";
+import ContactPage from './views/ContactPage.vue';
+import NightLight from './views/NightLight.vue';
+//  import ScrollDeneme from './views/ScrollDeneme.vue';
+// import ScrollDenemee from "./views/ScrollDenemee.vue";
+
+import CardPage from './views/CardPage.vue';
+
+
+//Css
+import "../src/assets/responsive.css"
 
 export default {
   data() {
@@ -34,6 +49,11 @@ export default {
     DenemeMe,
     About,
     // DenemeMeOrnek,
+    ContactPage,
+    NightLight,
+    //  ScrollDeneme,
+    // ScrollDenemee
+    CardPage
   },
 };
 </script>
@@ -71,7 +91,9 @@ h3 {
   color: white !important;
   font-size: 35px !important;
 }
-
+.all-container{
+  width: 90%;
+}
 // .top-bar {
 //   display: flex;
 //   width: 100%;

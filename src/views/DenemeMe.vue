@@ -1,9 +1,9 @@
 
-  <template>
-  <h2>Skills</h2>
-  <div class="container">
+<template>
+  <h2 id="skills">Skills</h2>
+  <div class="container" >
     <div class="skills-area">
-      <div class="skill" v-for="(skill, index) in skills" :key="index">
+      <div class="skill" v-for="(skill, index) in skills" :key="index"  >
         <div class="skill-title">{{ skill.title }}</div>
         <div class="skill-bar"></div>
         <div
@@ -19,6 +19,9 @@
 
 
 <script>
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
+
 export default {
   data: () => ({
     skill: 20,
@@ -38,6 +41,10 @@ export default {
         percent: "80%",
       },
       {
+        title: "BOOTSTRAP",
+        percent: "80%",
+      },
+      {
         title: "JS",
         percent: "70%",
       },
@@ -46,19 +53,23 @@ export default {
         percent: "70%",
       },
       {
+        title: "VUETIFY",
+        percent: "60%",
+      },
+      {
         title: "NUXT JS",
         percent: "70%",
       },
-      {
-        title: "VUETIFY",
-        percent: "40%",
-      },
-      {
-        title: "BOOTSTRAP",
-        percent: "30%",
-      },
+      
+      
     ],
   }),
+
+
+  
+  // mounted(){
+  //   AOS.init();
+  // }
 };
 </script>
 
@@ -154,10 +165,10 @@ h2 {
     $percent: 70%;
     $name: "nuxtjs";
   } @else if $i == 7 {
-    $percent: 40%;
+    $percent: 60%;
     $name: "vuetify";
   } @else if $i == 8 {
-    $percent: 30%;
+    $percent: 80%;
     $name: "bootstrap";
   }
 
@@ -173,7 +184,7 @@ h2 {
 
   // Her animasyon için ilgili sınıfa animasyonu ekliyoruz
   .#{$name} {
-    animation: #{$name} 2s;
+    animation: #{$name} 10s;
     width: $percent;
   }
 

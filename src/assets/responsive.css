@@ -1,0 +1,48 @@
+/* General style definitions */
+
+/* Large screens (typically desktops and laptops) */
+@media screen and (min-width: 1200px) {
+
+}
+
+/* Desktops and laptops */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    /* Style settings for desktops and laptops */
+}
+
+/* Tablets */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    /* Style settings for tablets */
+}
+
+/* Small tablets and large phones */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    /* Style settings for small tablets and large phones */
+}
+
+/* Mobile devices */
+@media screen and (max-width: 575px) {
+    .all-container{
+        width: 100% !important;
+    }
+    .app-container{
+        width: 100% !important;
+    }
+
+    .home .home-container[data-v-38def4f2]{
+     width: 100%;
+    flex-direction: column;
+    }
+    .home .home-container .media-icons[data-v-38def4f2]{
+        flex-direction: row;
+    }
+    .v-timeline[data-v-07e90753]{
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    }
+    .contact{
+        width: 100% !important;
+    }
+    
+}
