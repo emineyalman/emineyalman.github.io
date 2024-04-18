@@ -1,7 +1,7 @@
 <template>
   <section class="about section" id="about">
     <div class="container flex-container">
-      <h1  class="section-title-01">About Me</h1>
+      <h1  class="section-title">About Me</h1>
       <div class="content flex-center">
         <div class="about-img">
           <img src="tasarimmmmm.png" alt="">
@@ -36,11 +36,12 @@ export default {
   position: relative;
   width: 90%;
  margin: 0 auto;
- background: #262626;
+ /* background: #262626; */
+ background: #18181B;
 }
-.section-title-01{
+.section-title{
   font-size: 4.5em;
-  margin-bottom: 2rem;
+ margin: 6rem;
   
 }
 .container{
@@ -56,7 +57,7 @@ width: 100%;
 }
 .about-img img{
   max-width: 90%;
-  min-width: 500px;
+  min-width: 400px;
   border-radius: 10px;
 }
 .about-info .description{ 

@@ -68,7 +68,7 @@ body {
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  height: 5000px;
+  height: 6000px;
   border-radius: 1rem;
   border: 1px #827e580d solid;
 }

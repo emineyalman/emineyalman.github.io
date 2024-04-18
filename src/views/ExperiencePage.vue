@@ -63,6 +63,6 @@ export default {
 }
 
 .experience-title {
-  margin-bottom: 3rem;
+  margin: 6rem;
 }
 </style>
