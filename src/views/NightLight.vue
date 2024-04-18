@@ -1,20 +1,20 @@
 <template>
-    <div id="app" >
+  <div>
     <label class="switch">
       <input type="checkbox" v-model="isNightMode">
       <span class="slider"></span>
     </label>
     <p>{{ isNightMode ? 'Gece Modu' : 'Gündüz Modu' }}</p>
   </div>
-
 </template>
 
 <script>
 export default {
-    data() {
-        return {
-          isNightMode: false
-        }},
+  data() {
+    return {
+      isNightMode: false
+    };
+  },
   watch: {
     isNightMode: function(newVal) {
       if (newVal) {
@@ -24,7 +24,7 @@ export default {
       }
     }
   }
-}
+};
 </script>
 
 <style scoped>
@@ -77,8 +77,7 @@ input:checked + .slider:before {
 }
 /* Gece Modu stilleri */
 .night-mode {
-  background-color: white;
-  color: #1e1515;
+  background-color: black;
+  color: white;
 }
-
 </style>

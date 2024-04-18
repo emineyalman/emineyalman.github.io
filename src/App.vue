@@ -1,17 +1,15 @@
 <template>
   <div class="app-container">
     <div class="all-container">
+      <NavbarPage />
       <HomePage />
-      <About />
+      <AboutPage/>
       <Experience />
-      <!-- <Skills /> -->
-      <DenemeMe />
-      <DenemeMeOrnek />
-      <ContactPage/>
-      <NightLight/>
-    <!-- <ScrollDeneme/> -->
-      <!-- <ScrollDenemee/> -->
-      <CardPage/>
+      <SkillsPage />
+      <PortfolioPage/>
+      <ContactPage />
+      <NightLight />
+     
     </div>
   </div>
 </template>
@@ -20,22 +18,17 @@
 
 
 <script>
-import HomePage from "./components/HomePage.vue";
+import NavbarPage from "./components/NavbarPage.vue";
 import Experience from "./views/ExperiencePage.vue";
-// import Skills from "./views/SkillsPage.vue";
-import DenemeMe from "./views/DenemeMe.vue";
-// import DenemeMeOrnek from "./views/DenemeMe.vue";
-import About from "./views/AboutPage.vue";
-import ContactPage from './views/ContactPage.vue';
-import NightLight from './views/NightLight.vue';
-//  import ScrollDeneme from './views/ScrollDeneme.vue';
-// import ScrollDenemee from "./views/ScrollDenemee.vue";
-
-import CardPage from './views/CardPage.vue';
-
+import SkillsPage from "./views/SkillsPage.vue";
+import HomePage from "./views/HomePage.vue";
+import ContactPage from "./views/ContactPage.vue";
+import NightLight from "./views/NightLight.vue";
+import AboutPage from "./views/AboutPage.vue";
+import PortfolioPage from "./views/PortfolioPage.vue"
 
 //Css
-import "../src/assets/responsive.css"
+import "../src/assets/responsive.css";
 
 export default {
   data() {
@@ -43,17 +36,14 @@ export default {
   },
 
   components: {
-    HomePage,
+    NavbarPage,
     Experience,
-    // Skills,
-    DenemeMe,
-    About,
-    // DenemeMeOrnek,
+    SkillsPage,
+    HomePage,
     ContactPage,
     NightLight,
-    //  ScrollDeneme,
-    // ScrollDenemee
-    CardPage
+    AboutPage,
+    PortfolioPage,
   },
 };
 </script>
@@ -75,11 +65,10 @@ body {
   padding: 10px;
   color: #333;
   background: #18181b;
-  //background: red;
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  height: 4000px;
+  height: 5000px;
   border-radius: 1rem;
   border: 1px #827e580d solid;
 }
@@ -91,40 +80,9 @@ h3 {
   color: white !important;
   font-size: 35px !important;
 }
-.all-container{
+.all-container {
   width: 90%;
 }
-// .top-bar {
-//   display: flex;
-//   width: 100%;
-// }
-
-// #navigation-icon {
-//   padding: 10px 10px 20px;
-//   margin-right: 10px;
-//   cursor: pointer;
-
-//   i {
-//     font-size: 2rem;
-//   }
-// }
-
-// .content {
-//   position: absolute;
-//   top: 10px;
-//   width: calc(100% - 10px);
-//   // height: calc(100vh - 60px);
-//   height: 1000px;
-//   padding: 20px;
-//   background-color: #fff;
-//   border-radius: 30px;
-//   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-//   transition: 1s transform cubic-bezier(0, 0.12, 0.14, 1);
-// }
-
-// .open {
-//   transform: translateX(300px);
-// }
 </style>
 
 

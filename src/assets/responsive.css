@@ -29,12 +29,12 @@
         width: 100% !important;
     }
 
-    .home .home-container[data-v-38def4f2]{
+    .home .home-container{
      width: 100%;
     flex-direction: column;
     }
-    .home .home-container .media-icons[data-v-38def4f2]{
-        flex-direction: row;
+    .home .home-container .media-icons{
+        flex-direction: row !important;
     }
     .v-timeline[data-v-07e90753]{
     flex-direction: column;
@@ -44,5 +44,8 @@
     .contact{
         width: 100% !important;
     }
-    
+    /*About Page */
+    .flex-center{
+        flex-direction: column;
+    }
 }

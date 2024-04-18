@@ -1,5 +1,7 @@
 <template>
-  <h3 id="education-experiences">Education and Experience</h3>
+  <h3 id="education-experiences" class="experience-title">
+    Education and Experience
+  </h3>
   <v-timeline align="start">
     <v-timeline-item
       v-for="year in yearsList"
@@ -15,35 +17,36 @@
         ></div>
       </template>
       <div>
-        <h2 :class="`mt-n1 headline font-weight-light mb-4 text-${year.color}`" data-aos="fade-up">
+        <h2
+          :class="`mt-n1 headline font-weight-light mb-4 text-${year.color}`"
+          data-aos="fade-up"
+        >
           {{ year.title }}
         </h2>
-        <div style="color: white"   data-aos="zoom-in-up">
+        <div style="color: white" data-aos="zoom-in-up">
           {{ year.description }}
         </div>
       </div>
     </v-timeline-item>
   </v-timeline>
 </template>
+
 <script>
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+
 export default {
   data: () => ({
     yearsList: [],
   }),
   mounted() {
-    AOS.init();
-   this.$appAxios.get("/years").then((years_response) => {
-   console.log("years_response :>> ", years_response);
-  this.yearsList = years_response?.data || [];
-});
-}
-
+    this.$appAxios.get("/years").then((years_response) => {
+      console.log("years_response :>> ", years_response);
+      this.yearsList = years_response?.data || [];
+    });
+  },
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .v-timeline {
   background: #222226;
   width: 80%;
@@ -51,10 +54,15 @@ export default {
   height: 1300px;
   border-radius: 1rem;
   border: 1px #827e580d solid;
+
+  .v-timeline--vertical.v-timeline--align-start
+    .v-timeline-divider
+    .v-timeline-divider__after {
+    background: #f7f4f4 !important;
+  }
 }
-.v-timeline--vertical.v-timeline--align-start
-  .v-timeline-divider
-  .v-timeline-divider__after {
-  background: #f7f4f4 !important;
+
+.experience-title {
+  margin-bottom: 3rem;
 }
 </style>

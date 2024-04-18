@@ -24,5 +24,10 @@
       "title": "Nist Group",
       "description": "Template sites using Html, Css, Scss, Responsive Design, Flexbox, Bootstrap, JS technologies at workI did.I developed a buy and sell bot frontend using Vuejs, Nuxt js, Vuetify."
     }
+  ],
+  "portfolio": [
+    {
+      "color":"amber"
+    }
   ]
 }
