@@ -2,9 +2,9 @@
   <section class="home flex-default" id="home">
     <div class="home-container">
       <div data-aos="fade-down" class="media-icons">
-        <a href="#"> <i class="fab fa-facebook-f"> </i> </a>
-        <a href="#"> <i class="fab fa-instagram"> </i> </a>
-        <a href="#"> <i class="fab fa-twitter"> </i> </a>
+        <a href="https://github.com/emineyalman" target="_blank"> <i class="fab fa-github"> </i> </a>
+        <a href="https://www.linkedin.com/in/emine-y-14b22a152/" target="_blank"> <i class="fab fa-linkedin"> </i> </a>
+        <a href="https://medium.com/@emine.yalman" target="_blank"> <i class="fab fa-medium"> </i> </a>
       </div>
       <div class="info">
         <h2 data-aos="zoom-out-up">Hi, I am Emine</h2>
