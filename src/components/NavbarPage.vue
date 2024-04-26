@@ -48,7 +48,7 @@ export default {
         { id: 2, title: "About" },
         { id: 4, title: "Education-Experiences" },
         { id: 3, title: "Skills" },
-        { id: 5, title: "Blog" },
+        { id: 5, title: "Portfolio" },
         { id: 6, title: "Contact" },
       ],
       menuOpen: false,

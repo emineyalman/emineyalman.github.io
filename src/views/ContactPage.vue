@@ -71,20 +71,28 @@ export default {
 .contact {
   width: 70%;
   height: 700px;
-  background: rgb(32, 32, 32);
+  // background: rgb(32, 32, 32);
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  background-image: radial-gradient(
+      circle,
+      rgb(255, 204, 0),
+      rgb(255, 0, 183),
+    );
 }
 
 .v-form {
   width: 70%;
   margin: 0 auto;
+  color: white;
 }
 
 .v-text-field {
-  background: rgb(32, 32, 32);
+background: #FF6983;  
+color: white;
+border-radius: 30px;
 }
 
 .v-field__field {
@@ -103,5 +111,6 @@ export default {
 
 .text-color {
   color: black;
+  margin-top: 3rem;
 }
 </style>

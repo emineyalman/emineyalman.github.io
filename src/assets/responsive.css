@@ -48,4 +48,11 @@
     .flex-center{
         flex-direction: column;
     }
+    .portfolio-container{
+        flex-direction: column;
+        height: 1500px !important;
+    }
+    .v-card {
+        width: 90%!important;
+    }
 }

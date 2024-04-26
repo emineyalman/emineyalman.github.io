@@ -96,6 +96,7 @@ h2 {
       rgb(255, 204, 0),
       rgb(255, 0, 183)
     );
+   
     height: 40px;
     border-radius: 100px;
     display: flex;

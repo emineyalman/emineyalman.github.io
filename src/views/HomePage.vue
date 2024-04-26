@@ -24,7 +24,7 @@
     <a
       href="#"
       class="scroll-down"
-      @click.prevent="scrollToElement('education-experiences')"
+      @click.prevent="scrollToElement('about')"
       ><i class="fas fa-arrow-down"></i
     ></a>
   </section>

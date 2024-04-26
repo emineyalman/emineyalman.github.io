@@ -12,7 +12,10 @@
             <h4 data-aos="fade-left">Front-End Developer</h4>
             <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dolorem possimus repellendus dicta omnis minima cumque quos saepe voluptate alias, velit quasi, cum modi voluptatum magni nulla perspiciatis culpa laudantium!</p>
           </div>
-          <a class=" btn animate__animated  animate__wobble" href="" > Download CV <i class="fas fa-download"></i> </a>
+          <div class="download-section">
+    <a class="btn animate__animated animate__wobble" href="/public/ingilizce-aylar.pdf" download>Download CV <i class="fas fa-download"></i></a>
+</div>
+
         </div>
       </div>
     </div>
@@ -92,5 +95,11 @@ width: 100%;
     padding: 14px 30px;
     letter-spacing: 1px;
     border-radius: 10px;
+}
+.btn:hover{
+  background: #db2777;
+  color: white;
+  transition: 0.5s;
+
 }
 </style>

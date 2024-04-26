@@ -8,8 +8,8 @@
       <SkillsPage />
       <PortfolioPage/>
       <ContactPage />
-      <NightLight />
-     
+      <!-- <NightLight /> -->
+      <FooterPage/>
     </div>
   </div>
 </template>
@@ -23,9 +23,11 @@ import Experience from "./views/ExperiencePage.vue";
 import SkillsPage from "./views/SkillsPage.vue";
 import HomePage from "./views/HomePage.vue";
 import ContactPage from "./views/ContactPage.vue";
-import NightLight from "./views/NightLight.vue";
+// import NightLight from "./views/NightLight.vue";
 import AboutPage from "./views/AboutPage.vue";
 import PortfolioPage from "./views/PortfolioPage.vue"
+import FooterPage from "./views/FooterPage.vue"
+
 
 //Css
 import "../src/assets/responsive.css";
@@ -41,9 +43,10 @@ export default {
     SkillsPage,
     HomePage,
     ContactPage,
-    NightLight,
+    // NightLight,
     AboutPage,
     PortfolioPage,
+    FooterPage,
   },
 };
 </script>
@@ -59,6 +62,9 @@ body {
   background-color: #121213 !important ;
   border-radius: 1rem;
 }
+body.dark{
+  background: white;
+}
 
 .app-container {
   width: 80%;
@@ -68,7 +74,7 @@ body {
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  height: 6000px;
+  height: 5100px;
   border-radius: 1rem;
   border: 1px #827e580d solid;
 }
