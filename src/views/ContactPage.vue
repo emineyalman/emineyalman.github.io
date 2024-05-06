@@ -92,7 +92,8 @@ export default {
 .v-text-field {
 background: #FF6983;  
 color: white;
-border-radius: 30px;
+// border-radius: 30px;
+margin-bottom: 2rem;
 }
 
 .v-field__field {
@@ -111,6 +112,10 @@ border-radius: 30px;
 
 .text-color {
   color: black;
-  margin-top: 3rem;
+  display: flex;
+ margin: 0 auto;
+}
+h3{
+  margin-bottom: 2rem;
 }
 </style>

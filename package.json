@@ -11,6 +11,7 @@
   "dependencies": {
     "@babel/cli": "^7.24.1",
     "@mdi/font": "5.9.55",
+    "@vueuse/core": "^10.9.0",
     "animate.css": "^4.1.1",
     "aos": "^2.3.4",
     "axios": "^1.6.7",

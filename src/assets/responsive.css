@@ -2,17 +2,28 @@
 
 /* Large screens (typically desktops and laptops) */
 @media screen and (min-width: 1200px) {
+    .app-container {
+        height: 6000px;
+
+    }
 
 }
 
 /* Desktops and laptops */
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-    /* Style settings for desktops and laptops */
+@media screen and (min-width: 1000px) and (max-width: 1199px) {
+    .app-container {
+        height: 5900px !important;
+
+    }
+
 }
 
 /* Tablets */
-@media screen and (min-width: 768px) and (max-width: 991px) {
-    /* Style settings for tablets */
+@media screen and (min-width: 799px) and (max-width: 999px) {
+    .app-container {
+        height: 6000px !important;
+
+    }
 }
 
 /* Small tablets and large phones */

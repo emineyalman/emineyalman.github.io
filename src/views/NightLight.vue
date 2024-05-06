@@ -1,83 +1,25 @@
 <template>
-  <div>
-    <label class="switch">
-      <input type="checkbox" v-model="isNightMode">
-      <span class="slider"></span>
-    </label>
-    <p>{{ isNightMode ? 'Gece Modu' : 'Gündüz Modu' }}</p>
-  </div>
+  <button @click.stop="toggleDarkMode()">
+    <i v-if="isDark" class="fas fa-moon"></i> <!-- Moon icon for dark mode -->
+    <i v-else class="fas fa-sun"></i> <!-- Sun icon for light mode -->
+  </button>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      isNightMode: false
-    };
-  },
-  watch: {
-    isNightMode: function(newVal) {
-      if (newVal) {
-        document.body.classList.add('night-mode');
-      } else {
-        document.body.classList.remove('night-mode');
-      }
-    }
-  }
-};
+<script setup>
+import { useDark, useToggle } from "@vueuse/core";
+
+const { isDark, toggle: toggleDarkMode } = useDark({
+  selector: "body", //element to add attribute to
+  attribute: "theme", // attribute name
+  valueDark: "custom-dark", // attribute value for dark mode
+  valueLight: "custom-light", // attribute value for light mode
+});
 </script>
 
 <style scoped>
-/* Temel switch stilleri */
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
-
-.switch input { 
-  display: none;
-}
-
-.slider {
-  position: absolute;
+button {
+  background: transparent;
+  border: none;
   cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
-  border-radius: 34px;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-  border-radius: 50%;
-}
-
-input:checked + .slider {
-  background-color: #2196F3;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-/* Gece Modu stilleri */
-.night-mode {
-  background-color: black;
-  color: white;
 }
 </style>

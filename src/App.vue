@@ -1,7 +1,11 @@
 <template>
-  <div class="app-container">
+  <div class="app-container" :class="{ light: isDark }">
     <div class="all-container">
       <NavbarPage />
+      <button @click.stop="toggleDark()">
+        <i v-if="isDark" class="fas fa-moon"></i> 
+        <i v-else class="fas fa-sun"></i>
+      </button>
       <HomePage />
       <AboutPage/>
       <Experience />
@@ -14,8 +18,18 @@
   </div>
 </template>
 
+<script setup>
+import { useDark, useToggle } from "@vueuse/core";
 
+const isDark = useDark({
+  selector: "body", 
+  attribute: "theme", 
+  valueDark: "custom-dark", 
+  valueLight: "custom-light", 
+});
 
+const toggleDark = useToggle(isDark);
+</script>
 
 <script>
 import NavbarPage from "./components/NavbarPage.vue";
@@ -74,7 +88,7 @@ body.dark{
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  height: 5100px;
+  height: 5500px;
   border-radius: 1rem;
   border: 1px #827e580d solid;
 }
@@ -87,9 +101,27 @@ h3 {
   font-size: 35px !important;
 }
 .all-container {
-  width: 90%;
+  width: 100%;
+}
+
+.dark {
+  background: #16171d; // it's better to use a dark grey color instead of pure black
+  color: #fff;
+}
+.light{
+  background: white;
+  color: black;
+}
+[theme="custom-dark"] {
+  background: rgb(21, 12, 12);
+  color: #fff;
+}
+[theme="custom-light"] {
+  background: white;
+  color: #1a0b0b;
+}
+
+.button .i{
+ font-size: 30px;
 }
 </style>
-
-
-

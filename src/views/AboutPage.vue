@@ -10,10 +10,10 @@
           <div class="description">
             <h3 data-aos="fade-left">I'am Emine</h3>
             <h4 data-aos="fade-left">Front-End Developer</h4>
-            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dolorem possimus repellendus dicta omnis minima cumque quos saepe voluptate alias, velit quasi, cum modi voluptatum magni nulla perspiciatis culpa laudantium!</p>
+            <p >I am a frontend developer experienced in HTML, CSS, JavaScript and Vue.js. With my passion and skills in creating user-friendly interfaces, I constantly improve myself to develop effective web solutions.</p>
           </div>
           <div class="download-section">
-    <a class="btn animate__animated animate__wobble" href="/public/ingilizce-aylar.pdf" download>Download CV <i class="fas fa-download"></i></a>
+    <a class="btn animate__animated animate__wobble" href="https://drive.google.com/file/d/1t_S3VuJBorO7FC6d05bAt00alZ3p--AY/view?usp=sharing" download target="_blank">View CV <i class="fas fa-download"></i></a>
 </div>
 
         </div>
