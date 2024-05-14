@@ -111,7 +111,7 @@ a {
     transition: ease-out 0.6s;
     background-image: radial-gradient(circle, #ffcc00, #ff00b7);
     box-shadow: inset 0 0 0 50px #d80286;
-    animation: shake 0.5s; /* hover durumunda animasyon */
+    animation: shake 0.5s; 
   }
 }
 
@@ -146,11 +146,11 @@ a {
 
   .logo {
     font-family: "Roboto", "Open Sans", "Montserrat", "Lato";
-    font-size: 18px; /* İstenilen yazı boyutu */
-    color: #e5d9d9; /* Yazı rengi */
+    font-size: 18px; 
+    color: #e5d9d9; 
 
     &:hover {
-      cursor: pointer; /* Fare imleci */
+      cursor: pointer; 
       background-image: linear-gradient(to right, #facc15, #db2777);
       -webkit-background-clip: text;
       color: transparent;

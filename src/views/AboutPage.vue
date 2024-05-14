@@ -29,7 +29,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .flex-center{
   display: flex;
   justify-content: center;
@@ -39,7 +39,6 @@ export default {
   position: relative;
   width: 90%;
  margin: 0 auto;
- /* background: #262626; */
  background: #18181B;
 }
 .section-title{
