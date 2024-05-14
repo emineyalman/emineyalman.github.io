@@ -6,7 +6,7 @@
 </template>
 
 <script setup>
-import { useDark, useToggle } from "@vueuse/core";
+import { useDark } from "@vueuse/core";
 
 const { isDark, toggle: toggleDarkMode } = useDark({
   selector: "body", //element to add attribute to
