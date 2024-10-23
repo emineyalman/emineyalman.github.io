@@ -162,4 +162,7 @@ a {
   background-image: radial-gradient(circle, #ffcc00, #db2777)
 }
 
+.navbar-collapse{
+  z-index: 1000;
+}
 </style>
