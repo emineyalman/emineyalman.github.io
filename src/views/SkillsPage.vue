@@ -30,7 +30,7 @@ export default {
         { title: "BOOTSTRAP", percent: "80%" },
         { title: "JS", percent: "70%" },
         { title: "VUE JS", percent: "70%" },
-        { title: "VUETIFY", percent: "60%" },
+        { title: "VUETIFY", percent: "80%" },
         { title: "NUXT JS", percent: "70%" },
       ],
     };
